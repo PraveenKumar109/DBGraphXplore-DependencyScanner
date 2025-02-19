@@ -86,7 +86,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 For queries or collaborations, reach out via:
 - **GitHub Issues**: [Submit an issue](https://github.com/PraveenKumar109/DBGraphXplore-DependencyScanner/issues)
-- **Email**: [praveenkumar@example.com](mailto:praveenkumar@example.com)
+- **Email**: [praveen.kumar4@soprasteria.com](mailto:praveen.kumar4@soprasteria.com)
 
 ---
 ⭐ If you find this project useful, **star** this repository on GitHub to show your support! ⭐
