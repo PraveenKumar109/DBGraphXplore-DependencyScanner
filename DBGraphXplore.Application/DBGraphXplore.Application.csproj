@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <Version />
+    <Configurations>Debug;Release;local</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="StoreProcedureList - Copy %283%29.txt" />
+    <None Remove="StoreProcedureList - Copy (2).txt" />
+    <None Remove="StoreProcedureList.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="StoreProcedureList - Copy (2).txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StoreProcedureList - Copy (3).txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StoreProcedureList.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0">
+      <TreatAsUsed>true</TreatAsUsed>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBDependancyGeneration\DBGraphXplore.DatabaseScanner.csproj" />
+    <ProjectReference Include="..\DBGraphXplore.CodeAnalysis.DotNet\DBGraphXplore.CodeAnalysis.DotNet.csproj" />
+    <ProjectReference Include="..\DBGraphXplore.CodeDocument.AzureOpenAI\DBGraphXplore.CodeDocument.AzureOpenAI.csproj" />
+    <ProjectReference Include="..\DBGraphXplore.Core\DBGraphXplore.Core.csproj" />
+    <ProjectReference Include="..\DBGraphXplore.KnowledgeGraph.Neo4j\DBGraphXplore.KnowledgeGraph.Neo4j.csproj" />
+    <ProjectReference Include="..\LogViewer\LogViewer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="app.config_____">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,47 @@
+﻿<configuration>
+	<configSections>
+		<section name="Neo4jConfigurations"  type="System.Configuration.AppSettingsSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+		<section name="OpenAIConfigurations" type="System.Configuration.AppSettingsSection, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+	</configSections>
+	<Neo4jConfigurations>
+		<add key="uri" value="neo4j+s://5a14b910.databases.neo4j.io" />
+		<add key="username" value="neo4j" />
+		<add key="password" value="8GdWFgBlqYQHQPU-wZF4bsoCaI-5H1l_7P5gBATJiGw" />
+	</Neo4jConfigurations>
+	<OpenAIConfigurations>
+		<add key="OPENAI_ENDPOINT" value = "https://dbmigopenai01.openai.azure.com/"/>
+		<add key="OPENAI_API_KEY" value = "d15a4c2207fa4a308d6fe1a55a302a89"/>
+		<add key="OPENAI_DEPLOYMENT_ID" value = "SSIGpt4o"/>
+		<add key="OPENAI_API_KEY_VERSION" value = "2024-08-01-preview"/>
+		<add key="OPENAI_MODEL_NAME" value = "gpt-4o"/>
+	</OpenAIConfigurations>
+	<appSettings>
+		<add key="ejWorkSpace" value="Server=D2CMTSTSQPW139A;Database=ejWorkSpace;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejReservation" value="Server=D2CMTSTSQPW139A;Database=ejReservation;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejFlight" value="Server=D2CMTSTSQPW139A;Database=ejFlight;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejKeyServer" value="Server=D2CMTSTSQPW139A;Database=ejKeyServer;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejStaffTravel" value="Server=D2CMTSTSQPW139A;Database=ejStaffTravel;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="AncillaryProduct" value="Server=D2CMTSTSQPW139A;Database=AncillaryProduct;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejHistory" value="Server=D2CMTSTSQPW139A;Database=ejHistory;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejPromotion" value="Server=D2CMTSTSQPW139A;Database=ejPromotion;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="AncillaryProduct" value="Server=D2CMTSTSQPW139A;Database=AncillaryProduct;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="easyJetHalo" value="Server=D2CMTSTSQPW139A;Database=easyJetHalo;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejClaim" value="Server=D2CMTSTSQPW139A;Database=ejClaim;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejCustomerPayments" value="Server=D2CMTSTSQPW139A;Database=ejCustomerPayments;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejPassengerDataExchange" value="Server=D2CMTSTSQPW139A;Database=ejPassengerDataExchange;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="Scratchpad" value="Server=D2CMTSTSQPW139A;Database=Scratchpad;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="WorkArea" value="Server=D2CMTSTSQPW139A;Database=WorkArea;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="Admin" value="Server=D2CMTSTSQPW139A;Database=Admin;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ALPersistence" value="Server=D2CMTSTSQPW139A;Database=ALPersistence;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="BOSSPROD_1" value="Server=D2CMTSTSQPW139A;Database=BOSSPROD_1;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="Chargeback" value="Server=D2CMTSTSQPW139A;Database=Chargeback;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="easyJetCore" value="Server=D2CMTSTSQPW139A;Database=easyJetCore;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejFraud" value="Server=D2CMTSTSQPW139A;Database=ejFraud;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ejPropertyManager" value="Server=D2CMTSTSQPW139A;Database=ejPropertyManager;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="ezReportDB" value="Server=D2CMTSTSQPW139A;Database=ezReportDB;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="Mommi" value="Server=D2CMTSTSQPW139A;Database=Mommi;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="NServiceBus" value="Server=D2CMTSTSQPW139A;Database=NServiceBus;Integrated Security=True;TrustServerCertificate=True;" />
+		<add key="SitecoreSSIS" value="Server=D2CMTSTSQPW139A;Database=SitecoreSSIS;Integrated Security=True;TrustServerCertificate=True;" />
+		<!-- Add more keys as needed -->
+	</appSettings>
+</configuration>

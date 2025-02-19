@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;local</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBGraphXplore.CodeDocument.AzureOpenAI\DBGraphXplore.CodeDocument.AzureOpenAI.csproj" />
+    <ProjectReference Include="..\DBGraphXplore.Core\DBGraphXplore.Core.csproj" />
+  </ItemGroup>
+
+</Project>
